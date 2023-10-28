@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "653bc1aad878205faf54ecd0"
+  },
+  "username": "Raghav",
+  "password": "raghav",
+  "bio": "I am an Engineer.",
+  "location": "Kanpur",
+  "occupation": "Web developer"
+},
+{
+  "_id": {
+    "$oid": "653be1992a83ba8e66bec562"
+  },
+  "username": "Priya",
+  "password": "priya",
+  "bio": "Hello",
+  "location": "Lucknow",
+  "occupation": "CA"
+},
+{
+  "_id": {
+    "$oid": "653be228bf806c535174143c"
+  },
+  "username": "Ajay",
+  "password": "ajay",
+  "bio": "I am an Actor.",
+  "location": "Lucknow",
+  "occupation": "Actor"
+},
+{
+  "_id": {
+    "$oid": "653beabcbf806c535174143e"
+  },
+  "username": "Jackie",
+  "password": "jackie",
+  "bio": "I am a student",
+  "location": "jhasi",
+  "occupation": "student"
+},
+{
+  "_id": {
+    "$oid": "653bf3c7d8d578a0a054afc3"
+  },
+  "username": "raghavendra",
+  "img": {},
+  "password": "raghav",
+  "bio": "I am a student",
+  "location": "jhasi",
+  "occupation": "student"
+}]
