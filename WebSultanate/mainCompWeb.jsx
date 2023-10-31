@@ -14,7 +14,7 @@ class MainCompWeb extends Component {
   fetchData = async () => {
     let response = await httpService.get("/myDetails");
     let { data } = response;
-    console.log(data);
+    // console.log(data);
     this.setState({ person: data });
   };
   componentDidMount() {
@@ -27,7 +27,7 @@ class MainCompWeb extends Component {
   render() {
     const { person } = this.state;
     let auth = authPassportService.getToken();
-    console.log(auth);
+    // console.log(auth);
     return (
       <>
         <NavbarCookieAuth />
