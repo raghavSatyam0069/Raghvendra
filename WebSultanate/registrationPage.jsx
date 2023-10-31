@@ -37,17 +37,17 @@ function RegistrationPage(props) {
   };
   const handleImageChange = (e) => {
     const file = e.target.files[0];
-    console.log(URL.createObjectURL(file));
+    // console.log(URL.createObjectURL(file));
     setImg(file);
   };
   const handleRegister = async (values) => {
     let response = await httpService.post("/myDetails", values);
-    console.log(response.data);
+    // console.log(response.data);
     alert(response.data);
   };
   const handleEdit = async (values) => {
     let response = await httpService.put("/myDetails", values);
-    console.log(response.data);
+    // console.log(response.data);
   };
   return (
     <div
@@ -67,7 +67,7 @@ function RegistrationPage(props) {
         onSubmit={(values) => {
           values.img = img;
           let { mode } = props.match.params;
-          console.log(mode);
+          // console.log(mode);
           mode === "New" ? handleRegister(values) : handleEdit(values);
           authPassportService.removeToken();
           props.history.push("/");
