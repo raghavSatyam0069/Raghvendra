@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import httpService from "../services/httpService.js";
 function MyDetails(props) {
   let { username, bio, location, occupation } = props.person;
-  console.log(username);
+  // console.log(username);
 
   return (
     <div className="container">
