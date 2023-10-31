@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import httpService from "../services/httpService";
+import httpService from "../services/httpService.js";
 function MyDetails(props) {
   let { username, bio, location, occupation } = props.person;
+  console.log(username);
 
   return (
     <div className="container">

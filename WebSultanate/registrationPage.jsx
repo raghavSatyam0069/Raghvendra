@@ -43,6 +43,7 @@ function RegistrationPage(props) {
   const handleRegister = async (values) => {
     let response = await httpService.post("/myDetails", values);
     console.log(response.data);
+    alert(response.data);
   };
   const handleEdit = async (values) => {
     let response = await httpService.put("/myDetails", values);

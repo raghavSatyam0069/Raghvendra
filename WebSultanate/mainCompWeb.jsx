@@ -27,6 +27,7 @@ class MainCompWeb extends Component {
   render() {
     const { person } = this.state;
     let auth = authPassportService.getToken();
+    console.log(auth);
     return (
       <>
         <NavbarCookieAuth />
@@ -44,15 +45,15 @@ class MainCompWeb extends Component {
             />
             <Route
               path="/home"
-              render={(props) => {
-                auth ? <HomePage {...props} person={person} /> : <LoginAuth />;
-              }}
+              render={(props) =>
+                auth ? <HomePage {...props} person={person} /> : <LoginAuth />
+              }
             />
             <Route
-              path="/MyDetails"
-              render={(props) => {
-                auth ? <MyDetails {...props} person={person} /> : <LoginAuth />;
-              }}
+              path="/myDetails"
+              render={(props) =>
+                auth ? <MyDetails {...props} person={person} /> : <LoginAuth />
+              }
             />
 
             <Redirect from="/" to="/login" />

@@ -14,9 +14,8 @@ class NavbarCookieAuth extends Component {
   };
 
   render() {
-    const { data } = this.state;
     const key = authPassportService.getToken();
-    console.log(key);
+    // console.log(key);
     return (
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
